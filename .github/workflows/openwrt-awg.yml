@@ -8,8 +8,8 @@ on:
 jobs:
   build:
     name: "v${{ matrix.tag }} - ${{ matrix.build_env.pkgarch}} :: ${{ matrix.build_env.target}}/${{ matrix.build_env.subtarget}} build"
-    runs-on: Linux
-    #runs-on: ubuntu-latest
+    #runs-on: Linux
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         tag: ['21.02']
