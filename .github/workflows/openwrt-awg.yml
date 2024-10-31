@@ -12,11 +12,12 @@ jobs:
     #runs-on: ubuntu-latest
     strategy:
       matrix:
-        tag: ['23.05.5']
+        tag: ['21.02']
         build_env:
           - pkgarch: aarch64_cortex-a53
             target: mediatek
-            subtarget: filogic
+            subtarget: mt7981
+            vermagic: "b9f5bf8639f9fcf1c649445e0e06c971"
     steps:
       - uses: actions/checkout@v4
         with:
